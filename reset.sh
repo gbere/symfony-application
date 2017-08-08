@@ -1,1 +1,1 @@
-bin/console c:c --no-warmup
+composer install
