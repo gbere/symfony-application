@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#224470">
+
+        <title>{% block title %}Endroid.nl{% endblock %}</title>
+
+        <link rel="icon" href="{{ asset('symfony.png') }}">
+        <link rel="manifest" href="{{ asset('manifest.json') }}">
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ preload(manifest_asset('build/base.css', 'build/manifest.json')) }}">
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+
+            {% block navigation %}
+                <ol class="breadcrumb">
+                    <li><a href="{{ path('app_default_home') }}">Home</a></li>
+                </ol>
+            {% endblock %}
+
+            {% block content %}
+
+            {% endblock %}
+        {% endblock %}
+
+        {% block javascripts %}
+            <script src="{{ preload(manifest_asset('build/base.js', 'build/manifest.json')) }}"></script>
+            <script>
+                if ('serviceWorker' in navigator) {
+                    navigator.serviceWorker.register('service-worker.js')
+                        .then(function(result){
+
+                        }).catch(function(error) {
+                            console.log('Failed to register service worker: ', error);
+                        });
+                }
+            </script>
+        {% endblock %}
+    </body>
+</html>

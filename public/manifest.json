@@ -1,0 +1,14 @@
+{
+  "name": "Symfony Application",
+  "short_name": "Symfony Application",
+  "start_url": "/?utm_source=homescreen",
+  "display": "standalone",
+  "theme_color": "#224470",
+  "background_color": "#224470",
+  "description": "Sharon is Karin",
+  "icons": [{
+    "src": "/symfony.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

@@ -1,0 +1,4 @@
+framework:
+    annotations: true
+    templating:
+        engines: ['twig']
