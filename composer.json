@@ -1,4 +1,8 @@
 {
+    "name": "endroid/symfony-application",
+    "description": "Endroid Symfony Application",
+    "keywords": ["endroid", "symfony", "flex", "application"],
+    "homepage": "https://github.com/endroid/symfony-application",
     "type": "project",
     "license": "proprietary",
     "require": {
