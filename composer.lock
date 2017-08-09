@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "744d4a341fda6152596a076d321156df",
+    "content-hash": "9d847aac0e0990890bfae47776ea7ab9",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -929,16 +929,16 @@
         },
         {
             "name": "endroid/asset",
-            "version": "1.0.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/Asset.git",
-                "reference": "533cdec9484bc1bde42dd8650bde356406da79e4"
+                "reference": "5c3fdac3706be9c098ba04797b9202908c68370d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/Asset/zipball/533cdec9484bc1bde42dd8650bde356406da79e4",
-                "reference": "533cdec9484bc1bde42dd8650bde356406da79e4",
+                "url": "https://api.github.com/repos/endroid/Asset/zipball/5c3fdac3706be9c098ba04797b9202908c68370d",
+                "reference": "5c3fdac3706be9c098ba04797b9202908c68370d",
                 "shasum": ""
             },
             "require": {
@@ -978,24 +978,76 @@
                 "manifest",
                 "symfony"
             ],
-            "time": "2017-08-06T21:14:43+00:00"
+            "time": "2017-08-06 21:25:42"
         },
         {
-            "name": "endroid/cm-sms",
-            "version": "1.4.3",
+            "name": "endroid/calendar",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/endroid/CmSms.git",
-                "reference": "cfe42dcfb7f793727ed44e4564c88927fe5db2db"
+                "url": "https://github.com/endroid/Calendar.git",
+                "reference": "c20147f7e8d2cc06ac5794ad6484d900b7875860"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/CmSms/zipball/cfe42dcfb7f793727ed44e4564c88927fe5db2db",
-                "reference": "cfe42dcfb7f793727ed44e4564c88927fe5db2db",
+                "url": "https://api.github.com/repos/endroid/Calendar/zipball/c20147f7e8d2cc06ac5794ad6484d900b7875860",
+                "reference": "c20147f7e8d2cc06ac5794ad6484d900b7875860",
                 "shasum": ""
             },
             "require": {
-                "endroid/asset": "^1.0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Endroid\\Calendar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen van den Enden",
+                    "email": "info@endroid.nl",
+                    "homepage": "http://endroid.nl/"
+                }
+            ],
+            "description": "Endroid Calendar",
+            "homepage": "https://github.com/endroid/Calendar",
+            "keywords": [
+                "calendar",
+                "endroid",
+                "google",
+                "ical",
+                "ics"
+            ],
+            "time": "2017-08-09 22:25:46"
+        },
+        {
+            "name": "endroid/cm-sms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/endroid/CmSms.git",
+                "reference": "e30d86babe6459dd5211040bb3c943aba54da002"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/endroid/CmSms/zipball/e30d86babe6459dd5211040bb3c943aba54da002",
+                "reference": "e30d86babe6459dd5211040bb3c943aba54da002",
+                "shasum": ""
+            },
+            "require": {
                 "jms/serializer": "^1.1",
                 "myclabs/php-enum": "^1.5",
                 "php": ">=5.5",
@@ -1044,20 +1096,20 @@
                 "sms",
                 "symfony"
             ],
-            "time": "2017-08-06T20:43:06+00:00"
+            "time": "2017-08-06 20:38:18"
         },
         {
             "name": "endroid/flusher",
-            "version": "1.0.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/Flusher.git",
-                "reference": "f812b835fb26a1d3bedbbb579a6aba46d658e719"
+                "reference": "71adfc287b3012b81e6b46e382233f11d3c0916f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/Flusher/zipball/f812b835fb26a1d3bedbbb579a6aba46d658e719",
-                "reference": "f812b835fb26a1d3bedbbb579a6aba46d658e719",
+                "url": "https://api.github.com/repos/endroid/Flusher/zipball/71adfc287b3012b81e6b46e382233f11d3c0916f",
+                "reference": "71adfc287b3012b81e6b46e382233f11d3c0916f",
                 "shasum": ""
             },
             "require": {
@@ -1097,11 +1149,11 @@
                 "flusher",
                 "symfony"
             ],
-            "time": "2017-08-08T14:49:38+00:00"
+            "time": "2017-08-09 07:34:31"
         },
         {
             "name": "endroid/import",
-            "version": "1.0.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/Import.git",
@@ -1164,11 +1216,11 @@
                 "import",
                 "symfony"
             ],
-            "time": "2017-08-07T22:56:13+00:00"
+            "time": "2017-08-07 22:56:13"
         },
         {
             "name": "endroid/property-access",
-            "version": "1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/PropertyAccess.git",
@@ -1217,20 +1269,20 @@
                 "endroid",
                 "property"
             ],
-            "time": "2017-01-01T15:15:27+00:00"
+            "time": "2017-01-01 15:15:27"
         },
         {
             "name": "endroid/qrcode",
-            "version": "2.3.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/QrCode.git",
-                "reference": "bd143051302aa4ff506be7342bda8b6145fba766"
+                "reference": "7b766b2593b8eb635107a3d81b4d5db9fe553e4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/QrCode/zipball/bd143051302aa4ff506be7342bda8b6145fba766",
-                "reference": "bd143051302aa4ff506be7342bda8b6145fba766",
+                "url": "https://api.github.com/repos/endroid/QrCode/zipball/7b766b2593b8eb635107a3d81b4d5db9fe553e4a",
+                "reference": "7b766b2593b8eb635107a3d81b4d5db9fe553e4a",
                 "shasum": ""
             },
             "require": {
@@ -1282,11 +1334,128 @@
                 "bundle",
                 "code",
                 "endroid",
+                "flex",
                 "qr",
                 "qrcode",
                 "symfony"
             ],
-            "time": "2017-08-05T21:43:15+00:00"
+            "time": "2017-08-05 21:55:59"
+        },
+        {
+            "name": "endroid/soccer-calendar",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/endroid/SoccerCalendar.git",
+                "reference": "c858dc1f84efe56bbff0ce113745edacf49575a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/endroid/SoccerCalendar/zipball/c858dc1f84efe56bbff0ce113745edacf49575a3",
+                "reference": "c858dc1f84efe56bbff0ce113745edacf49575a3",
+                "shasum": ""
+            },
+            "require": {
+                "endroid/calendar": "^1.0",
+                "ext-gd": "*",
+                "fabpot/goutte": "^3.2",
+                "php": ">=5.6",
+                "symfony/cache": "^2.7|^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7|^6.0",
+                "sensio/framework-extra-bundle": "^3.0",
+                "symfony/asset": "^2.7|^3.0",
+                "symfony/browser-kit": "^2.7|^3.0",
+                "symfony/css-selector": "^2.7|^3.0",
+                "symfony/finder": "^2.7|^3.0",
+                "symfony/framework-bundle": "^2.7|^3.0",
+                "symfony/http-kernel": "^2.7|^3.0",
+                "symfony/templating": "^2.7|^3.0",
+                "symfony/twig-bundle": "^2.7|^3.0",
+                "symfony/yaml": "^2.7|^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Endroid\\SoccerCalendar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen van den Enden",
+                    "email": "info@endroid.nl",
+                    "homepage": "http://endroid.nl/"
+                }
+            ],
+            "description": "Endroid Soccer Calendar",
+            "homepage": "https://github.com/endroid/SoccerCalendar",
+            "keywords": [
+                "bundle",
+                "calendar",
+                "endroid",
+                "soccer",
+                "symfony"
+            ],
+            "time": "2017-08-09 22:26:24"
+        },
+        {
+            "name": "fabpot/goutte",
+            "version": "v3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfPHP/Goutte.git",
+                "reference": "db5c28f4a010b4161d507d5304e28a7ebf211638"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfPHP/Goutte/zipball/db5c28f4a010b4161d507d5304e28a7ebf211638",
+                "reference": "db5c28f4a010b4161d507d5304e28a7ebf211638",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.0",
+                "php": ">=5.5.0",
+                "symfony/browser-kit": "~2.1|~3.0",
+                "symfony/css-selector": "~2.1|~3.0",
+                "symfony/dom-crawler": "~2.1|~3.0"
+            },
+            "type": "application",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Goutte\\": "Goutte"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "A simple PHP Web Scraper",
+            "homepage": "https://github.com/FriendsOfPHP/Goutte",
+            "keywords": [
+                "scraper"
+            ],
+            "time": "2017-01-03T13:21:43+00:00"
         },
         {
             "name": "fig/link-util",
@@ -3262,6 +3431,63 @@
             "time": "2017-05-01T15:01:29+00:00"
         },
         {
+            "name": "symfony/browser-kit",
+            "version": "v3.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/browser-kit.git",
+                "reference": "8079a6b3668ef15cdbf73a4c7d31081abb8bb5f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/8079a6b3668ef15cdbf73a4c7d31081abb8bb5f0",
+                "reference": "8079a6b3668ef15cdbf73a4c7d31081abb8bb5f0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/dom-crawler": "~2.8|~3.0"
+            },
+            "require-dev": {
+                "symfony/css-selector": "~2.8|~3.0",
+                "symfony/process": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/process": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\BrowserKit\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony BrowserKit Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-07-12T13:03:20+00:00"
+        },
+        {
             "name": "symfony/cache",
             "version": "v3.3.6",
             "source": {
@@ -3519,6 +3745,59 @@
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
             "time": "2017-07-29T21:27:59+00:00"
+        },
+        {
+            "name": "symfony/css-selector",
+            "version": "v3.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "4d882dced7b995d5274293039370148e291808f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/4d882dced7b995d5274293039370148e291808f2",
+                "reference": "4d882dced7b995d5274293039370148e291808f2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony CssSelector Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-05-01T15:01:29+00:00"
         },
         {
             "name": "symfony/debug",
@@ -3788,6 +4067,62 @@
             "time": "2017-07-26T06:42:48+00:00"
         },
         {
+            "name": "symfony/dom-crawler",
+            "version": "v3.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dom-crawler.git",
+                "reference": "fc2c588ce376e9fe04a7b8c79e3ec62fe32d95b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/fc2c588ce376e9fe04a7b8c79e3ec62fe32d95b1",
+                "reference": "fc2c588ce376e9fe04a7b8c79e3ec62fe32d95b1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "symfony/css-selector": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/css-selector": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\DomCrawler\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony DomCrawler Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-05-25T23:10:31+00:00"
+        },
+        {
             "name": "symfony/event-dispatcher",
             "version": "v3.3.6",
             "source": {
@@ -4000,16 +4335,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.0.14",
+            "version": "v1.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "2f5590d22524cc515df674bc01827549c465656e"
+                "reference": "26b7b3d2bfeeafa2d08988c019510bdc634b1e21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/2f5590d22524cc515df674bc01827549c465656e",
-                "reference": "2f5590d22524cc515df674bc01827549c465656e",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/26b7b3d2bfeeafa2d08988c019510bdc634b1e21",
+                "reference": "26b7b3d2bfeeafa2d08988c019510bdc634b1e21",
                 "shasum": ""
             },
             "require": {
@@ -4042,7 +4377,7 @@
                     "email": "fabien.potencier@gmail.com"
                 }
             ],
-            "time": "2017-07-26T07:33:46+00:00"
+            "time": "2017-08-09T12:02:15+00:00"
         },
         {
             "name": "symfony/form",
@@ -7483,7 +7818,16 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "endroid/asset": 20,
+        "endroid/calendar": 20,
+        "endroid/cm-sms": 20,
+        "endroid/flusher": 20,
+        "endroid/import": 20,
+        "endroid/property-access": 20,
+        "endroid/qrcode": 20,
+        "endroid/soccer-calendar": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -17,4 +17,5 @@ return [
     'Endroid\Import\Bundle\ImportBundle\EndroidImportBundle' => ['all' => true],
     'Endroid\Import\Bundle\ImportDemoBundle\EndroidImportDemoBundle' => ['dev' => true],
     'Endroid\QrCode\Bundle\QrCodeBundle\EndroidQrCodeBundle' => ['all' => true],
+    'Endroid\SoccerCalendar\Bundle\SoccerCalendarBundle\EndroidSoccerCalendarBundle' => ['all' => true],
 ];
