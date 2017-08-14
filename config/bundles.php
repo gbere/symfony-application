@@ -14,6 +14,7 @@ return [
     'Endroid\Asset\Bundle\AssetBundle\EndroidAssetBundle' => ['all' => true],
     'Endroid\CmSms\Bundle\CmSmsBundle\EndroidCmSmsBundle' => ['all' => true],
     'Endroid\Flusher\Bundle\FlusherBundle\EndroidFlusherBundle' => ['all' => true],
+    'Endroid\Guide\Bundle\GuideBundle\EndroidGuideBundle' => ['all' => true],
     'Endroid\Import\Bundle\ImportBundle\EndroidImportBundle' => ['all' => true],
     'Endroid\Import\Bundle\ImportDemoBundle\EndroidImportDemoBundle' => ['dev' => true],
     'Endroid\QrCode\Bundle\QrCodeBundle\EndroidQrCodeBundle' => ['all' => true],

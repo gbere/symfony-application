@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "85e75e5a30a17c64fee9da16062f4e23",
+    "content-hash": "965424e4c224c85252e97df8e1132896",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -308,16 +308,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "v2.7.3",
+            "version": "v2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "4acb8f89626baafede6ee5475bc5844096eba8a9"
+                "reference": "ed349f953d443963c590b008b37b864b8a3c4b21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/4acb8f89626baafede6ee5475bc5844096eba8a9",
-                "reference": "4acb8f89626baafede6ee5475bc5844096eba8a9",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/ed349f953d443963c590b008b37b864b8a3c4b21",
+                "reference": "ed349f953d443963c590b008b37b864b8a3c4b21",
                 "shasum": ""
             },
             "require": {
@@ -326,15 +326,15 @@
                 "doctrine/collections": "1.*",
                 "doctrine/inflector": "1.*",
                 "doctrine/lexer": "1.*",
-                "php": "~5.6|~7.0"
+                "php": "~7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.4.6"
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7.x-dev"
+                    "dev-master": "2.8.x-dev"
                 }
             },
             "autoload": {
@@ -377,28 +377,30 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2017-07-22T08:35:12+00:00"
+            "time": "2017-07-22T09:01:43+00:00"
         },
         {
             "name": "doctrine/dbal",
-            "version": "v2.5.13",
+            "version": "v2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "729340d8d1eec8f01bff708e12e449a3415af873"
+                "reference": "1a086f853425b1f5349775ce57e45a772d2d2ba5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/729340d8d1eec8f01bff708e12e449a3415af873",
-                "reference": "729340d8d1eec8f01bff708e12e449a3415af873",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/1a086f853425b1f5349775ce57e45a772d2d2ba5",
+                "reference": "1a086f853425b1f5349775ce57e45a772d2d2ba5",
                 "shasum": ""
             },
             "require": {
-                "doctrine/common": ">=2.4,<2.8-dev",
-                "php": ">=5.3.2"
+                "doctrine/common": "^2.7.1",
+                "ext-pdo": "*",
+                "php": "^7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.*",
+                "phpunit/phpunit": "^5.4.6",
+                "phpunit/phpunit-mock-objects": "!=3.2.4,!=3.2.5",
                 "symfony/console": "2.*||^3.0"
             },
             "suggest": {
@@ -410,7 +412,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5.x-dev"
+                    "dev-master": "2.6.x-dev"
                 }
             },
             "autoload": {
@@ -448,27 +450,27 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2017-07-22T20:44:48+00:00"
+            "time": "2017-07-28T10:40:18+00:00"
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "1.6.8",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "6e96577cbbdbb5b6dcca2ff203d665976b51beb0"
+                "reference": "629d2a8b16f99a0b2ba6868f7af9986afee5fea7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/6e96577cbbdbb5b6dcca2ff203d665976b51beb0",
-                "reference": "6e96577cbbdbb5b6dcca2ff203d665976b51beb0",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/629d2a8b16f99a0b2ba6868f7af9986afee5fea7",
+                "reference": "629d2a8b16f99a0b2ba6868f7af9986afee5fea7",
                 "shasum": ""
             },
             "require": {
-                "doctrine/dbal": "~2.3",
+                "doctrine/dbal": "^2.5.12",
                 "doctrine/doctrine-cache-bundle": "~1.2",
                 "jdorn/sql-formatter": "~1.1",
-                "php": ">=5.5.9",
+                "php": "^7.1",
                 "symfony/console": "~2.7|~3.0|~4.0",
                 "symfony/dependency-injection": "~2.7|~3.0|~4.0",
                 "symfony/doctrine-bridge": "~2.7|~3.0|~4.0",
@@ -476,7 +478,7 @@
             },
             "require-dev": {
                 "doctrine/orm": "~2.3",
-                "phpunit/phpunit": "~4",
+                "phpunit/phpunit": "^6.1",
                 "satooshi/php-coveralls": "^1.0",
                 "symfony/phpunit-bridge": "~2.7|~3.0|~4.0",
                 "symfony/property-info": "~2.8|~3.0|~4.0",
@@ -491,7 +493,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6.x-dev"
+                    "dev-master": "1.7.x-dev"
                 }
             },
             "autoload": {
@@ -529,7 +531,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2017-05-18T08:15:18+00:00"
+            "time": "2017-07-28T20:57:50+00:00"
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
@@ -796,23 +798,23 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.5.6",
+            "version": "v2.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "e6c434196c8ef058239aaa0724b4aadb0107940b"
+                "reference": "e3aa3f2d1d7ac4bc732f8630f78fcb92d2885e68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/e6c434196c8ef058239aaa0724b4aadb0107940b",
-                "reference": "e6c434196c8ef058239aaa0724b4aadb0107940b",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/e3aa3f2d1d7ac4bc732f8630f78fcb92d2885e68",
+                "reference": "e3aa3f2d1d7ac4bc732f8630f78fcb92d2885e68",
                 "shasum": ""
             },
             "require": {
                 "doctrine/cache": "~1.4",
                 "doctrine/collections": "~1.2",
-                "doctrine/common": ">=2.5-dev,<2.8-dev",
-                "doctrine/dbal": ">=2.5-dev,<2.6-dev",
+                "doctrine/common": ">=2.5-dev,<2.9-dev",
+                "doctrine/dbal": ">=2.5-dev,<2.7-dev",
                 "doctrine/instantiator": "~1.0.1",
                 "ext-pdo": "*",
                 "php": ">=5.4",
@@ -868,7 +870,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2016-12-18T15:42:34+00:00"
+            "time": "2017-08-13T18:46:56+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -1104,12 +1106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/Flusher.git",
-                "reference": "71adfc287b3012b81e6b46e382233f11d3c0916f"
+                "reference": "9e6b540e406119e197e2d2ef142ac5a361c5a6d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/Flusher/zipball/71adfc287b3012b81e6b46e382233f11d3c0916f",
-                "reference": "71adfc287b3012b81e6b46e382233f11d3c0916f",
+                "url": "https://api.github.com/repos/endroid/Flusher/zipball/9e6b540e406119e197e2d2ef142ac5a361c5a6d5",
+                "reference": "9e6b540e406119e197e2d2ef142ac5a361c5a6d5",
                 "shasum": ""
             },
             "require": {
@@ -1149,7 +1151,72 @@
                 "flusher",
                 "symfony"
             ],
-            "time": "2017-08-09 07:34:31"
+            "time": "2017-08-13 23:11:03"
+        },
+        {
+            "name": "endroid/guide",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/endroid/Guide.git",
+                "reference": "ca2b3c2d9980d89b117cd185b029fd781e66ad73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/endroid/Guide/zipball/ca2b3c2d9980d89b117cd185b029fd781e66ad73",
+                "reference": "ca2b3c2d9980d89b117cd185b029fd781e66ad73",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "php": ">=5.6",
+                "symfony/cache": "^2.7|^3.0",
+                "symfony/options-resolver": "^2.7|^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7|^6.0",
+                "sensio/framework-extra-bundle": "^3.0",
+                "symfony/asset": "^2.7|^3.0",
+                "symfony/browser-kit": "^2.7|^3.0",
+                "symfony/css-selector": "^2.7|^3.0",
+                "symfony/finder": "^2.7|^3.0",
+                "symfony/framework-bundle": "^2.7|^3.0",
+                "symfony/http-kernel": "^2.7|^3.0",
+                "symfony/templating": "^2.7|^3.0",
+                "symfony/twig-bundle": "^2.7|^3.0",
+                "symfony/yaml": "^2.7|^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Endroid\\Guide\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen van den Enden",
+                    "email": "info@endroid.nl",
+                    "homepage": "http://endroid.nl/"
+                }
+            ],
+            "description": "Endroid Guide",
+            "homepage": "https://github.com/endroid/Guide",
+            "keywords": [
+                "bundle",
+                "endroid",
+                "guide",
+                "symfony"
+            ],
+            "time": "2017-08-14 22:09:43"
         },
         {
             "name": "endroid/import",
@@ -1157,12 +1224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/Import.git",
-                "reference": "cb8ac12ecc599940d3cb1623aa783805d558a60a"
+                "reference": "d927128af267e933a29bb43c29f18620a84b9ab9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/Import/zipball/cb8ac12ecc599940d3cb1623aa783805d558a60a",
-                "reference": "cb8ac12ecc599940d3cb1623aa783805d558a60a",
+                "url": "https://api.github.com/repos/endroid/Import/zipball/d927128af267e933a29bb43c29f18620a84b9ab9",
+                "reference": "d927128af267e933a29bb43c29f18620a84b9ab9",
                 "shasum": ""
             },
             "require": {
@@ -1216,7 +1283,7 @@
                 "import",
                 "symfony"
             ],
-            "time": "2017-08-07 22:56:13"
+            "time": "2017-08-14 22:13:45"
         },
         {
             "name": "endroid/property-access",
@@ -1277,12 +1344,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/QrCode.git",
-                "reference": "7b766b2593b8eb635107a3d81b4d5db9fe553e4a"
+                "reference": "856c7fb7c1a514dc0e61901d06fc61df3a7118c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/QrCode/zipball/7b766b2593b8eb635107a3d81b4d5db9fe553e4a",
-                "reference": "7b766b2593b8eb635107a3d81b4d5db9fe553e4a",
+                "url": "https://api.github.com/repos/endroid/QrCode/zipball/856c7fb7c1a514dc0e61901d06fc61df3a7118c5",
+                "reference": "856c7fb7c1a514dc0e61901d06fc61df3a7118c5",
                 "shasum": ""
             },
             "require": {
@@ -1339,7 +1406,7 @@
                 "qrcode",
                 "symfony"
             ],
-            "time": "2017-08-05 21:55:59"
+            "time": "2017-08-13 13:10:58"
         },
         {
             "name": "endroid/soccer-calendar",
@@ -1771,16 +1838,16 @@
         },
         {
             "name": "halilim/xml-iterator",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/halilim/xml-iterator.git",
-                "reference": "7e336d534c5cdcb258d5929406e72c6d4057a7d6"
+                "reference": "c62d371b1e1a1e54709f133b448eb59a5d5a539f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/halilim/xml-iterator/zipball/7e336d534c5cdcb258d5929406e72c6d4057a7d6",
-                "reference": "7e336d534c5cdcb258d5929406e72c6d4057a7d6",
+                "url": "https://api.github.com/repos/halilim/xml-iterator/zipball/c62d371b1e1a1e54709f133b448eb59a5d5a539f",
+                "reference": "c62d371b1e1a1e54709f133b448eb59a5d5a539f",
                 "shasum": ""
             },
             "require": {
@@ -1790,10 +1857,19 @@
                 "ext-xmlreader": "*",
                 "php": ">=5.3"
             },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0||~5.0",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "XmlIterator": "."
+                "psr-4": {
+                    "XmlIterator\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1803,7 +1879,8 @@
             "authors": [
                 {
                     "name": "Halil Özgür",
-                    "email": "halil@ozgur.gmail.com"
+                    "email": "h@halil.im",
+                    "homepage": "https://halil.im/"
                 }
             ],
             "description": "XML Reader to simplexml/array iterator with low memory usage and an acceptable level of ease of use.",
@@ -1813,7 +1890,7 @@
                 "iterator",
                 "xml"
             ],
-            "time": "2014-11-30T22:03:55+00:00"
+            "time": "2017-08-10T22:40:11+00:00"
         },
         {
             "name": "javiereguiluz/easyadmin-bundle",
@@ -7900,6 +7977,7 @@
         "endroid/calendar": 20,
         "endroid/cm-sms": 20,
         "endroid/flusher": 20,
+        "endroid/guide": 20,
         "endroid/import": 20,
         "endroid/property-access": 20,
         "endroid/qrcode": 20,
