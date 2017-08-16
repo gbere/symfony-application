@@ -1,18 +1,25 @@
 language: php
 
-php:
-  - 7.1
+sudo: false
 
 matrix:
   fast_finish: true
+  include:
+    - php: 7.1
+
+addons:
+  mariadb: '10.3'
+
+cache:
+  directories:
+    - $HOME/.composer/cache/files
 
 before_install:
-  - cp .env.travis .env
   - phpenv config-rm xdebug.ini
-  - composer self-update && composer install --no-interaction
+  - composer self-update
+
+install:
+  - composer install
 
 script:
-  - vendor/bin/phpunit
-
-notifications:
-  email: info@endroid.nl
+  - sh check.sh

@@ -6,3 +6,7 @@
 ###< symfony/framework-bundle ###
 
 /node_modules/
+
+###> symfony/phpunit-bridge ###
+/phpunit.xml
+###< symfony/phpunit-bridge ###
