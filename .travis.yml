@@ -19,6 +19,7 @@ before_install:
   - composer self-update
 
 install:
+  - cp .env.testing .env
   - composer install
 
 script:
