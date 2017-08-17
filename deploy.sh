@@ -2,9 +2,11 @@
 
 alias docker-compose-prod='docker-compose -f docker-compose.yml -f docker-compose.prod.yml'
 
+sh stop.sh
+
 git pull
 
-sh stop.sh
+cp .env.docker .env
 echo y | docker-compose-prod rm
 docker-compose-prod build
 docker-compose-prod up -d
