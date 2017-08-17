@@ -6,7 +6,7 @@ sh stop.sh
 
 git pull
 
-cp .env.docker .env
+cp .env.prod .env
 echo y | docker-compose-prod rm
 docker-compose-prod build
 docker-compose-prod up -d
