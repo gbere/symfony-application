@@ -11,7 +11,6 @@ return [
     'Doctrine\Bundle\DoctrineBundle\DoctrineBundle' => ['all' => true],
     'JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle' => ['all' => true],
     'Symfony\Bundle\DebugBundle\DebugBundle' => ['dev' => true, 'test' => true],
-    'Endroid\Asset\Bundle\AssetBundle\EndroidAssetBundle' => ['all' => true],
     'Endroid\CmSms\Bundle\CmSmsBundle\EndroidCmSmsBundle' => ['all' => true],
     'Endroid\Flusher\Bundle\FlusherBundle\EndroidFlusherBundle' => ['all' => true],
     'Endroid\Guide\Bundle\GuideBundle\EndroidGuideBundle' => ['all' => true],

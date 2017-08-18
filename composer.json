@@ -7,7 +7,6 @@
     "license": "proprietary",
     "require": {
         "php": "^7.1.3",
-        "endroid/asset": "dev-master",
         "endroid/calendar": "dev-master",
         "endroid/cm-sms": "dev-master",
         "endroid/flusher": "dev-master",

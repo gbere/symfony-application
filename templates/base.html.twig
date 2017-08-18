@@ -11,7 +11,7 @@
         <link rel="manifest" href="{{ asset('manifest.json') }}">
 
         {% block stylesheets %}
-            <link rel="stylesheet" href="{{ preload(manifest_asset('build/base.css', 'build/manifest.json')) }}">
+            <link rel="stylesheet" href="{{ preload(asset('/build/base.css')) }}">
         {% endblock %}
     </head>
     <body>
@@ -110,7 +110,7 @@
         {% endblock body %}
 
         {% block javascripts %}
-            <script src="{{ preload(manifest_asset('build/base.js', 'build/manifest.json')) }}"></script>
+            <script src="{{ preload(asset('build/base.js')) }}"></script>
             <script>
                 if ('serviceWorker' in navigator) {
                     navigator.serviceWorker.register('service-worker.js')
