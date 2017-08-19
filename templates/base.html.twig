@@ -110,7 +110,7 @@
         {% endblock body %}
 
         {% block javascripts %}
-            <script src="{{ preload(asset('build/base.js')) }}"></script>
+            <script src="{{ preload(asset('/build/base.js')) }}"></script>
             <script>
                 if ('serviceWorker' in navigator) {
                     navigator.serviceWorker.register('service-worker.js')
