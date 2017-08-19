@@ -1367,12 +1367,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/SoccerCalendar.git",
-                "reference": "c858dc1f84efe56bbff0ce113745edacf49575a3"
+                "reference": "1153551e28c272c0335fc2956a68478cbbb37144"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/SoccerCalendar/zipball/c858dc1f84efe56bbff0ce113745edacf49575a3",
-                "reference": "c858dc1f84efe56bbff0ce113745edacf49575a3",
+                "url": "https://api.github.com/repos/endroid/SoccerCalendar/zipball/1153551e28c272c0335fc2956a68478cbbb37144",
+                "reference": "1153551e28c272c0335fc2956a68478cbbb37144",
                 "shasum": ""
             },
             "require": {
@@ -1426,7 +1426,7 @@
                 "soccer",
                 "symfony"
             ],
-            "time": "2017-08-09 22:26:24"
+            "time": "2017-08-19 20:19:45"
         },
         {
             "name": "fabpot/goutte",
