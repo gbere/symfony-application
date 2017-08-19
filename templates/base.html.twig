@@ -111,17 +111,19 @@
 
         {% block javascripts %}
             <script src="{{ preload(asset('/build/base.js')) }}"></script>
-            <script>
-                if ('serviceWorker' in navigator) {
-                    navigator.serviceWorker
-                        .register('service-worker.js')
-                        .then(function() {
-                            console.log('Service worker registered');
-                        }).catch(function(error) {
-                            console.log('Failed to register service worker: ', error);
-                        });
-                }
-            </script>
+            {% if not app.debug %}
+                <script>
+                    if ('serviceWorker' in navigator) {
+                        navigator.serviceWorker
+                            .register('service-worker.js')
+                            .then(function() {
+                                console.log('Service worker registered');
+                            }).catch(function(error) {
+                                console.log('Failed to register service worker: ', error);
+                            });
+                    }
+                </script>
+            {% endif %}
         {% endblock %}
     </body>
 </html>
