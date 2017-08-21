@@ -19,4 +19,11 @@ return [
     'Endroid\QrCode\Bundle\QrCodeBundle\EndroidQrCodeBundle' => ['all' => true],
     'Endroid\SoccerCalendar\Bundle\SoccerCalendarBundle\EndroidSoccerCalendarBundle' => ['all' => true],
     'FOS\UserBundle\FOSUserBundle' => ['all' => true],
+    'Sonata\DatagridBundle\SonataDatagridBundle' => ['all' => true],
+    'Sonata\CoreBundle\SonataCoreBundle' => ['all' => true],
+    'Sonata\BlockBundle\SonataBlockBundle' => ['all' => true],
+    'Knp\Bundle\MenuBundle\KnpMenuBundle' => ['all' => true],
+    'Sonata\AdminBundle\SonataAdminBundle' => ['all' => true],
+    'Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle' => ['all' => true],
+    'HWI\Bundle\OAuthBundle\HWIOAuthBundle' => ['all' => true],
 ];
