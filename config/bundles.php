@@ -26,5 +26,5 @@ return [
     'Sonata\AdminBundle\SonataAdminBundle' => ['all' => true],
     'Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle' => ['all' => true],
     'HWI\Bundle\OAuthBundle\HWIOAuthBundle' => ['all' => true],
-    'Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle' => ['dev' => true, 'test' => true],
+    'Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle' => ['all' => true],
 ];
