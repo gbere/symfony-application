@@ -12,6 +12,9 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
   - cp .env.test .env
 
+before_script:
+  - sudo /etc/init.d/mysql stop
+
 script:
   - docker-compose build
   - docker-compose up -d
