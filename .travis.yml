@@ -17,5 +17,5 @@ before_install:
 script:
   - docker-compose build
   - sleep 10 # MariaDB takes some time to initialize
-  - docker-compose-prod exec --user 1000 php /bin/sh reset.sh
-  - docker-compose-prod exec --user 1000 php /bin/sh check.sh
+  - docker-compose exec --user 1000 php /bin/sh reset.sh
+  - docker-compose exec --user 1000 php /bin/sh check.sh
