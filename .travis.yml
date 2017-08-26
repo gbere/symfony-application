@@ -21,6 +21,7 @@ before_install:
 install:
   - cp .env.test .env
   - composer install
+  - yarn
 
 script:
   - sh check.sh
