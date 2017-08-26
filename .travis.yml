@@ -1,27 +1,21 @@
-language: php
+sudo: required
+services:
+  - docker
 
-sudo: false
-
-matrix:
-  fast_finish: true
-  include:
-    - php: 7.1
-
-addons:
-  mariadb: '10.3'
-
-cache:
-  directories:
-    - $HOME/.composer/cache/files
+env:
+  - DOCKER_COMPOSE_VERSION=1.14.0
 
 before_install:
+  - sudo rm /usr/local/bin/docker-compose
+  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
   - phpenv config-rm xdebug.ini
+  - cp .env.test .env
   - composer self-update
 
-install:
-  - cp .env.test .env
-  - composer install
-  - yarn
-
 script:
-  - sh check.sh
+  - docker-compose build
+  - sleep 10 # MariaDB takes some time to initialize
+  - docker-compose-prod exec --user 1000 php /bin/sh reset.sh
+  - docker-compose-prod exec --user 1000 php /bin/sh check.sh
