@@ -10,12 +10,11 @@ before_install:
   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
-  - phpenv config-rm xdebug.ini
   - cp .env.test .env
-  - composer self-update
 
 script:
   - docker-compose build
+  - docker-compose up -d
   - sleep 10 # MariaDB takes some time to initialize
   - docker-compose exec --user 1000 php /bin/sh reset.sh
   - docker-compose exec --user 1000 php /bin/sh check.sh
