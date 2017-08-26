@@ -1,0 +1,7 @@
+default:
+    extensions:
+        Behat\MinkExtension:
+            base_url: https://nginx
+            goutte:
+                guzzle_parameters:
+                    verify: false
