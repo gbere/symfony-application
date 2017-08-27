@@ -4,8 +4,8 @@ services:
 
 branches:
   only:
-    tags:
-      - /^[0-9\.]+$/
+    - master
+    - /^[0-9\.]+$/
 
 env:
   - DOCKER_COMPOSE_VERSION=1.14.0
