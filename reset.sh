@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-rm -rf var/cache/dev/*
-rm -rf var/cache/prod/*
+rm -rf var/cache/*
 
 php-cs-fixer fix src
 
