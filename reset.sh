@@ -3,6 +3,8 @@
 rm -rf var/cache/dev/*
 rm -rf var/cache/prod/*
 
+php-cs-fixer fix src
+
 composer install
 yarn
 
