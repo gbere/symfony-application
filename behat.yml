@@ -5,3 +5,7 @@ default:
             goutte:
                 guzzle_parameters:
                     verify: false
+            selenium2:
+                browser: chrome
+                wd_host: http://selenium_hub:4444/wd/hub
+            javascript_session: selenium2

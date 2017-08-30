@@ -15,14 +15,14 @@ services:
         environment:
             MYSQL_ROOT_PASSWORD: root
             MYSQL_DATABASE: application
-    prediction_io:
-        build: docker/prediction-io
-        tty: true
-        volumes:
-          - ./docker/prediction-io:/docker
-        ports:
-            - 7070:7070
-            - 8000:8000
+#    prediction_io:
+#        build: docker/prediction-io
+#        tty: true
+#        volumes:
+#          - ./docker/prediction-io:/docker
+#        ports:
+#            - 7070:7070
+#            - 8000:8000
     rabbitmq:
         image: rabbitmq:3.6.3-management
         environment:
@@ -31,11 +31,11 @@ services:
     redis:
         image: redis:3
     selenium_hub:
-        image: selenium/hub:3.0.1
+        image: selenium/hub:3.5.2
         ports:
             - 4444
-    selenium_node_firefox:
-        build: docker/selenium-firefox
+    selenium_node_chrome:
+        image: selenium/node-chrome:3.5.2
         depends_on:
             - selenium_hub
         environment:
@@ -60,7 +60,7 @@ services:
             - mailcatcher
             - mongodb
             - mariadb
-            - prediction_io
+#            - prediction_io
             - rabbitmq
             - redis
             - selenium_hub
