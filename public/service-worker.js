@@ -1,5 +1,4 @@
 self.addEventListener('fetch', function(event) {
-    return;
     if (event.request.method !== 'GET') {
         return;
     }
