@@ -2,6 +2,7 @@ twig:
     paths:
         templates: ~
         templates/bundles/FOSUser: FOSUser
+        templates/bundles/EndroidGuide: EndroidGuide
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
     form_themes:
