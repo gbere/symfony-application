@@ -2,8 +2,6 @@
 
 rm -rf var/cache/*
 
-php-cs-fixer fix src
-
 yarn
 composer install
 node_modules/.bin/encore production
