@@ -1676,12 +1676,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/CmSms.git",
-                "reference": "0393648a47874b180c5a4275331ed2d0c4aca668"
+                "reference": "fbc2d0dc8c0e6b509bb9b40445299855b413de78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/CmSms/zipball/0393648a47874b180c5a4275331ed2d0c4aca668",
-                "reference": "0393648a47874b180c5a4275331ed2d0c4aca668",
+                "url": "https://api.github.com/repos/endroid/CmSms/zipball/fbc2d0dc8c0e6b509bb9b40445299855b413de78",
+                "reference": "fbc2d0dc8c0e6b509bb9b40445299855b413de78",
                 "shasum": ""
             },
             "require": {
@@ -1736,7 +1736,7 @@
                 "sms",
                 "symfony"
             ],
-            "time": "2017-08-18 21:51:16"
+            "time": "2017-09-03 21:22:44"
         },
         {
             "name": "endroid/flusher",
