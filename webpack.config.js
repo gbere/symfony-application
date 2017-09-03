@@ -5,7 +5,7 @@ Encore
     .setPublicPath('/build')
     .setManifestKeyPrefix('/build')
     .cleanupOutputBeforeBuild()
-    .addEntry('base', './assets/js/base.js')
+    .createSharedEntry('base', './assets/js/base.js')
     .autoProvidejQuery()
     .enableReactPreset()
     .enableSourceMaps(!Encore.isProduction())
