@@ -4,7 +4,7 @@ rm -rf var/cache/*
 
 yarn
 composer install
-node_modules/.bin/encore production
+npm run build
 
 bin/console doctrine:database:drop --force
 bin/console doctrine:database:create
