@@ -16,6 +16,7 @@
         "endroid/flusher": "dev-master",
         "endroid/guide": "dev-master",
         "endroid/import": "dev-master",
+        "endroid/prediction-io": "dev-master",
         "endroid/property-access": "dev-master",
         "endroid/qrcode": "dev-master",
         "endroid/soccer-calendar": "dev-master",

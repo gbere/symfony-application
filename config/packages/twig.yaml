@@ -4,6 +4,7 @@ twig:
         templates/bundles/FOSUser: FOSUser
         templates/bundles/EndroidCmSms: EndroidCmSms
         templates/bundles/EndroidGuide: EndroidGuide
+        templates/bundles/EndroidPredictionIODemo: EndroidPredictionIODemo
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
     form_themes:

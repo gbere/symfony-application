@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "57162bbe1a9a4cda47a872eed77dfd21",
+    "content-hash": "9dae3ad143e801668dfb43e3d9e32ecd",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1922,6 +1922,61 @@
                 "symfony"
             ],
             "time": "2017-08-14 22:13:45"
+        },
+        {
+            "name": "endroid/prediction-io",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/endroid/PredictionIO.git",
+                "reference": "2d519c514448a8facb69bd3456beeafa270ef638"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/endroid/PredictionIO/zipball/2d519c514448a8facb69bd3456beeafa270ef638",
+                "reference": "2d519c514448a8facb69bd3456beeafa270ef638",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "predictionio/predictionio": "^0.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Endroid\\PredictionIO\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen van den Enden",
+                    "email": "info@endroid.nl",
+                    "homepage": "http://endroid.nl/"
+                }
+            ],
+            "description": "Endroid PredictionIO Client",
+            "homepage": "https://github.com/endroid/PredictionIO",
+            "keywords": [
+                "bundle",
+                "endroid",
+                "io",
+                "prediction",
+                "predictionio",
+                "symfony"
+            ],
+            "time": "2017-09-07 20:53:52"
         },
         {
             "name": "endroid/property-access",
@@ -4022,6 +4077,58 @@
                 "type"
             ],
             "time": "2015-07-25T16:39:46+00:00"
+        },
+        {
+            "name": "predictionio/predictionio",
+            "version": "v0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PredictionIO/PredictionIO-PHP-SDK.git",
+                "reference": "6a1ae71e26148d5012ee280ddcfd1c15d8899929"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PredictionIO/PredictionIO-PHP-SDK/zipball/6a1ae71e26148d5012ee280ddcfd1c15d8899929",
+                "reference": "6a1ae71e26148d5012ee280ddcfd1c15d8899929",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.1",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.7",
+                "symfony/class-loader": "~2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "predictionio\\": "src/predictionio/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "The PredictionIO Team",
+                    "email": "help@prediction.io",
+                    "homepage": "http://prediction.io"
+                }
+            ],
+            "description": "PredictionIO API PHP Client",
+            "homepage": "http://prediction.io",
+            "keywords": [
+                "prediction",
+                "predictionio",
+                "recommendation",
+                "rest",
+                "restful",
+                "tappingstone",
+                "web service"
+            ],
+            "time": "2016-04-26T20:34:16+00:00"
         },
         {
             "name": "psr/cache",
@@ -8247,6 +8354,7 @@
         "endroid/flusher": 20,
         "endroid/guide": 20,
         "endroid/import": 20,
+        "endroid/prediction-io": 20,
         "endroid/property-access": 20,
         "endroid/qrcode": 20,
         "endroid/soccer-calendar": 20

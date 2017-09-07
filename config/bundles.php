@@ -16,6 +16,8 @@ return [
     'Endroid\Guide\Bundle\GuideBundle\EndroidGuideBundle' => ['all' => true],
     'Endroid\Import\Bundle\ImportBundle\EndroidImportBundle' => ['all' => true],
     'Endroid\Import\Bundle\ImportDemoBundle\EndroidImportDemoBundle' => ['dev' => true],
+    'Endroid\PredictionIO\Bundle\PredictionIOBundle\EndroidPredictionIOBundle' => ['all' => true],
+    'Endroid\PredictionIO\Bundle\PredictionIODemoBundle\EndroidPredictionIODemoBundle' => ['all' => true],
     'Endroid\QrCode\Bundle\QrCodeBundle\EndroidQrCodeBundle' => ['all' => true],
     'Endroid\SoccerCalendar\Bundle\SoccerCalendarBundle\EndroidSoccerCalendarBundle' => ['all' => true],
     'FOS\UserBundle\FOSUserBundle' => ['all' => true],
