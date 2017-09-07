@@ -3,11 +3,11 @@ hwi_oauth:
     resource_owners:
         google:
             type: google
-            client_id: '%env(HWI_OAUTH_GOOGLE_CLIENT_ID)%'
-            client_secret: '%env(HWI_OAUTH_GOOGLE_CLIENT_SECRET)%'
+            client_id: '%env(GOOGLE_OAUTH_CLIENT_ID)%'
+            client_secret: '%env(GOOGLE_OAUTH_CLIENT_SECRET)%'
             scope: "email profile"
         github:
             type: github
-            client_id: '%env(HWI_OAUTH_GITHUB_CLIENT_ID)%'
-            client_secret: '%env(HWI_OAUTH_GITHUB_CLIENT_SECRET)%'
+            client_id: '%env(GITHUB_OAUTH_CLIENT_ID)%'
+            client_secret: '%env(GITHUB_OAUTH_CLIENT_SECRET)%'
             scope: 'user:email,public_repo'
