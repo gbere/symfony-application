@@ -4,7 +4,7 @@ rm -rf var/cache/*
 
 yarn
 composer install
-yarn run build
+yarn build
 
 bin/console doctrine:database:drop --force
 bin/console doctrine:database:create
