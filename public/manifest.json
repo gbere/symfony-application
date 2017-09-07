@@ -3,8 +3,8 @@
   "short_name": "Symfony",
   "start_url": "/?utm_source=homescreen",
   "display": "standalone",
-  "theme_color": "#224470",
-  "background_color": "#224470",
+  "theme_color": "#212529",
+  "background_color": "#212529",
   "description": "Sharon is Karin",
   "icons": [{
     "src": "/symfony.png",
