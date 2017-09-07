@@ -8,10 +8,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Kernel as BaseKernel;
 use Symfony\Component\Routing\RouteCollectionBuilder;
 
-/**
- * @author Fabien Potencier <fabien@symfony.com>
- */
-final class Kernel extends BaseKernel
+class Kernel extends BaseKernel
 {
     use MicroKernelTrait;
 
@@ -24,7 +21,7 @@ final class Kernel extends BaseKernel
 
     public function getLogDir(): string
     {
-        return dirname(__DIR__).'/var/logs';
+        return dirname(__DIR__).'/var/log';
     }
 
     public function registerBundles(): iterable
