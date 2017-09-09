@@ -2037,12 +2037,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/QrCode.git",
-                "reference": "856c7fb7c1a514dc0e61901d06fc61df3a7118c5"
+                "reference": "a90b4b1453317d1a261104ab9797d612afd929ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/QrCode/zipball/856c7fb7c1a514dc0e61901d06fc61df3a7118c5",
-                "reference": "856c7fb7c1a514dc0e61901d06fc61df3a7118c5",
+                "url": "https://api.github.com/repos/endroid/QrCode/zipball/a90b4b1453317d1a261104ab9797d612afd929ed",
+                "reference": "a90b4b1453317d1a261104ab9797d612afd929ed",
                 "shasum": ""
             },
             "require": {
@@ -2099,7 +2099,7 @@
                 "qrcode",
                 "symfony"
             ],
-            "time": "2017-08-13 13:10:58"
+            "time": "2017-09-08 14:58:28"
         },
         {
             "name": "endroid/soccer-calendar",
