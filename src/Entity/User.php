@@ -25,4 +25,52 @@ class User extends BaseUser implements UserInterface
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+
+    /**
+     * @ORM\Column(type="string", nullable=true, unique=true)
+     */
+    protected $googleId;
+
+    /**
+     * @ORM\Column(type="string", nullable=true, unique=true)
+     */
+    protected $githubId;
+
+    /**
+     * @return string
+     */
+    public function getGoogleId(): string
+    {
+        return $this->googleId;
+    }
+
+    /**
+     * @param string $googleId
+     * @return User
+     */
+    public function setGoogleId(string $googleId): User
+    {
+        $this->googleId = $googleId;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGithubId(): string
+    {
+        return $this->githubId;
+    }
+
+    /**
+     * @param string $githubId
+     * @return User
+     */
+    public function setGithubId(string $githubId): User
+    {
+        $this->githubId = $githubId;
+
+        return $this;
+    }
 }

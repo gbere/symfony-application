@@ -9,23 +9,34 @@
 
 namespace App\Security;
 
+use FOS\UserBundle\Model\UserInterface;
 use HWI\Bundle\OAuthBundle\OAuth\Response\UserResponseInterface;
 use HWI\Bundle\OAuthBundle\Security\Core\Exception\AccountNotLinkedException;
 use HWI\Bundle\OAuthBundle\Security\Core\User\FOSUBUserProvider;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
+use Symfony\Component\Security\Core\Exception\BadCredentialsException;
 
 class UserProvider extends FOSUBUserProvider
 {
     /**
      * {@inheritdoc}
      */
-    public function loadUserByOAuthUserResponse(UserResponseInterface $response)
+    public function loadUserByOAuthUserResponse(UserResponseInterface $response): UserInterface
     {
+        try {
+            return parent::loadUserByOAuthUserResponse($response);
+        } catch (AccountNotLinkedException $exception) {
+
+        }
+
         $userEmail = $response->getEmail();
         $user = $this->userManager->findUserByEmail($userEmail);
 
-        if (null === $user || null === $userEmail) {
-            throw new AccountNotLinkedException(sprintf("User '%s' not found.", $userEmail));
+        if (!$user instanceof UserInterface) {
+            throw new BadCredentialsException(sprintf('User with email address "%s" does not exist', $userEmail));
         }
+
+        $this->connect($user, $response);
 
         return $user;
     }
