@@ -18,3 +18,11 @@ Feature: Admin
     And I fill in "_password" with "superadmin"
     And I press "_submit"
     Then I should see "Sonata Admin"
+
+  @javascript
+  Scenario: Default login
+    Given I am on "/login"
+    And I fill in "_username" with "superadmin"
+    And I fill in "_password" with "superadmin"
+    And I press "_submit"
+    Then I should see "Log out"
