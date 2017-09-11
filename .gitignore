@@ -12,3 +12,4 @@
 ###< symfony/phpunit-bridge ###
 
 /public/build/
+/features/screenshots/

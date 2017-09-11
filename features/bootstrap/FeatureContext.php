@@ -3,6 +3,7 @@
 use Behat\Behat\Context\Context;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
+use Behat\Mink\Driver\Selenium2Driver;
 use Behat\MinkExtension\Context\MinkContext;
 
 /**
@@ -20,5 +21,15 @@ class FeatureContext extends MinkContext implements Context
     public function __construct()
     {
 
+    }
+
+    /**
+     * @Given /^I make a screenshot$/
+     */
+    public function iMakeAScreenshot()
+    {
+        $imageData = $this->getSession()->getScreenshot();
+
+        file_put_contents(__DIR__.'/../screenshots/'.date('U').'.png', $imageData);
     }
 }
