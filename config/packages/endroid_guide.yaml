@@ -4,6 +4,9 @@ endroid_guide:
 #            label: LuckyTV
 #            type: luckytv
         -
+            label: Sluipschutters
+            type: npo
+        -
             label: Klikbeet
             type: npo
         -
@@ -11,9 +14,6 @@ endroid_guide:
             type: npo
         -
             label: Zondag met Lubach
-            type: npo
-        -
-            label: Streetlab
             type: npo
         -
             label: Draadstaal
