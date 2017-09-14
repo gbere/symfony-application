@@ -35,9 +35,12 @@
                                 </li>
                             {% endif %}
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Profile</a>
+                                <a class="nav-link" href="{{ path('endroid_datasanitize_merge_index') }}">Data Sanitize</a>
                             </li>
                             {% if app.user %}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ path('endroid_cm_sms_dashboard') }}">SMS Dashboard</a>
+                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ path('fos_user_security_logout') }}">Log out</a>
                                 </li>
