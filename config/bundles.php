@@ -12,6 +12,7 @@ return [
     'JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle' => ['all' => true],
     'Symfony\Bundle\DebugBundle\DebugBundle' => ['dev' => true, 'test' => true],
     'Endroid\CmSms\Bundle\CmSmsBundle\EndroidCmSmsBundle' => ['all' => true],
+    'Endroid\Bundle\DataSanitizeBundle\EndroidDataSanitizeBundle' => ['all' => true],
     'Endroid\Flusher\Bundle\FlusherBundle\EndroidFlusherBundle' => ['all' => true],
     'Endroid\Guide\Bundle\GuideBundle\EndroidGuideBundle' => ['all' => true],
     'Endroid\Import\Bundle\ImportBundle\EndroidImportBundle' => ['all' => true],

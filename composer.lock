@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b60a9a903f5432ea1901228945304444",
+    "content-hash": "ef8cb9d23cec26e167403741adacee7a",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1738,6 +1738,58 @@
                 "symfony"
             ],
             "time": "2017-09-03 21:22:44"
+        },
+        {
+            "name": "endroid/data-sanitize-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/endroid/EndroidDataSanitizeBundle.git",
+                "reference": "089ee7425f1b6b72de2cebdd0ad76584f329094b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/endroid/EndroidDataSanitizeBundle/zipball/089ee7425f1b6b72de2cebdd0ad76584f329094b",
+                "reference": "089ee7425f1b6b72de2cebdd0ad76584f329094b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Endroid\\Bundle\\DataSanitizeBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen van den Enden",
+                    "email": "info@endroid.nl",
+                    "homepage": "http://endroid.nl/"
+                }
+            ],
+            "description": "Endroid Data Sanitize Bundle",
+            "homepage": "https://github.com/endroid/EndroidDataSanitizeBundle",
+            "keywords": [
+                "bundle",
+                "data",
+                "endroid",
+                "sanitize"
+            ],
+            "time": "2017-09-14 21:24:25"
         },
         {
             "name": "endroid/flusher",
@@ -4948,16 +5000,16 @@
         },
         {
             "name": "sonata-project/doctrine-orm-admin-bundle",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle.git",
-                "reference": "2eb055a821b618b41b351b8594396c8dea45dd1e"
+                "reference": "b06d0103572c0c35fea2b6b59b9e939818b10d64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/2eb055a821b618b41b351b8594396c8dea45dd1e",
-                "reference": "2eb055a821b618b41b351b8594396c8dea45dd1e",
+                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/b06d0103572c0c35fea2b6b59b9e939818b10d64",
+                "reference": "b06d0103572c0c35fea2b6b59b9e939818b10d64",
                 "shasum": ""
             },
             "require": {
@@ -5026,7 +5078,7 @@
                 "generator",
                 "sonata"
             ],
-            "time": "2017-07-05T08:58:56+00:00"
+            "time": "2017-09-14T10:48:58+00:00"
         },
         {
             "name": "sonata-project/exporter",
@@ -6194,16 +6246,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.0.19",
+            "version": "v1.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "e26bae9100740f20bcf19ebb6f2d82c2a9a0a1af"
+                "reference": "18e1d580367425ed6bc5e3046d40ec1d734d45e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/e26bae9100740f20bcf19ebb6f2d82c2a9a0a1af",
-                "reference": "e26bae9100740f20bcf19ebb6f2d82c2a9a0a1af",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/18e1d580367425ed6bc5e3046d40ec1d734d45e7",
+                "reference": "18e1d580367425ed6bc5e3046d40ec1d734d45e7",
                 "shasum": ""
             },
             "require": {
@@ -6236,7 +6288,7 @@
                     "email": "fabien.potencier@gmail.com"
                 }
             ],
-            "time": "2017-09-13T13:13:23+00:00"
+            "time": "2017-09-14T19:04:54+00:00"
         },
         {
             "name": "symfony/form",
@@ -8403,6 +8455,7 @@
     "stability-flags": {
         "endroid/calendar": 20,
         "endroid/cm-sms": 20,
+        "endroid/data-sanitize-bundle": 20,
         "endroid/flusher": 20,
         "endroid/guide": 20,
         "endroid/import": 20,

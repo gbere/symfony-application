@@ -13,6 +13,7 @@
         "doctrine/doctrine-fixtures-bundle": "^2.3",
         "endroid/calendar": "dev-master",
         "endroid/cm-sms": "dev-master",
+        "endroid/data-sanitize-bundle": "dev-master",
         "endroid/flusher": "dev-master",
         "endroid/guide": "dev-master",
         "endroid/import": "dev-master",
