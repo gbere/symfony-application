@@ -1677,12 +1677,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/CmSms.git",
-                "reference": "fbc2d0dc8c0e6b509bb9b40445299855b413de78"
+                "reference": "e102154e3a1558165a4fb1795207836dbd77c1ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/CmSms/zipball/fbc2d0dc8c0e6b509bb9b40445299855b413de78",
-                "reference": "fbc2d0dc8c0e6b509bb9b40445299855b413de78",
+                "url": "https://api.github.com/repos/endroid/CmSms/zipball/e102154e3a1558165a4fb1795207836dbd77c1ed",
+                "reference": "e102154e3a1558165a4fb1795207836dbd77c1ed",
                 "shasum": ""
             },
             "require": {
@@ -1737,7 +1737,7 @@
                 "sms",
                 "symfony"
             ],
-            "time": "2017-09-03 21:22:44"
+            "time": "2017-09-15 20:24:13"
         },
         {
             "name": "endroid/data-sanitize-bundle",
@@ -1745,12 +1745,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/EndroidDataSanitizeBundle.git",
-                "reference": "089ee7425f1b6b72de2cebdd0ad76584f329094b"
+                "reference": "aca624027d1183a93ecd512bce3c8bdb806adce9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/EndroidDataSanitizeBundle/zipball/089ee7425f1b6b72de2cebdd0ad76584f329094b",
-                "reference": "089ee7425f1b6b72de2cebdd0ad76584f329094b",
+                "url": "https://api.github.com/repos/endroid/EndroidDataSanitizeBundle/zipball/aca624027d1183a93ecd512bce3c8bdb806adce9",
+                "reference": "aca624027d1183a93ecd512bce3c8bdb806adce9",
                 "shasum": ""
             },
             "require": {
@@ -1789,7 +1789,7 @@
                 "endroid",
                 "sanitize"
             ],
-            "time": "2017-09-14 21:24:25"
+            "time": "2017-09-15 20:25:28"
         },
         {
             "name": "endroid/flusher",
@@ -1982,12 +1982,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/PredictionIO.git",
-                "reference": "2d519c514448a8facb69bd3456beeafa270ef638"
+                "reference": "af87e8327e7f3b223d80144a8ea7505fac7d0865"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/PredictionIO/zipball/2d519c514448a8facb69bd3456beeafa270ef638",
-                "reference": "2d519c514448a8facb69bd3456beeafa270ef638",
+                "url": "https://api.github.com/repos/endroid/PredictionIO/zipball/af87e8327e7f3b223d80144a8ea7505fac7d0865",
+                "reference": "af87e8327e7f3b223d80144a8ea7505fac7d0865",
                 "shasum": ""
             },
             "require": {
@@ -2029,7 +2029,7 @@
                 "predictionio",
                 "symfony"
             ],
-            "time": "2017-09-07 20:53:52"
+            "time": "2017-09-15 20:26:16"
         },
         {
             "name": "endroid/property-access",
