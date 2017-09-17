@@ -16,7 +16,7 @@ return [
     'Endroid\Flusher\Bundle\FlusherBundle\EndroidFlusherBundle' => ['all' => true],
     'Endroid\Guide\Bundle\GuideBundle\EndroidGuideBundle' => ['all' => true],
     'Endroid\Import\Bundle\ImportBundle\EndroidImportBundle' => ['all' => true],
-    'Endroid\Import\Bundle\ImportDemoBundle\EndroidImportDemoBundle' => ['dev' => true],
+    'Endroid\Import\Bundle\ImportDemoBundle\EndroidImportDemoBundle' => ['all' => true],
     'Endroid\PredictionIO\Bundle\PredictionIOBundle\EndroidPredictionIOBundle' => ['all' => true],
     'Endroid\PredictionIO\Bundle\PredictionIODemoBundle\EndroidPredictionIODemoBundle' => ['all' => true],
     'Endroid\QrCode\Bundle\QrCodeBundle\EndroidQrCodeBundle' => ['all' => true],
