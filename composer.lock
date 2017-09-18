@@ -1745,12 +1745,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/DataSanitize.git",
-                "reference": "1dbd654aecbc297aa415f0b9a000b346fc0cd7a2"
+                "reference": "72173cf0c53c7fe44d2767038b994f0e966edb96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/DataSanitize/zipball/1dbd654aecbc297aa415f0b9a000b346fc0cd7a2",
-                "reference": "1dbd654aecbc297aa415f0b9a000b346fc0cd7a2",
+                "url": "https://api.github.com/repos/endroid/DataSanitize/zipball/72173cf0c53c7fe44d2767038b994f0e966edb96",
+                "reference": "72173cf0c53c7fe44d2767038b994f0e966edb96",
                 "shasum": ""
             },
             "require": {
@@ -1790,7 +1790,7 @@
                 "sanitize",
                 "symfony"
             ],
-            "time": "2017-09-18 20:33:07"
+            "time": "2017-09-18 20:49:44"
         },
         {
             "name": "endroid/flusher",
@@ -2228,12 +2228,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/Tile.git",
-                "reference": "663c4c56b4a49eefe4eedadf1c82ba2ad7752afb"
+                "reference": "737eb2116c85c056d612373bf29aaee7c9f00ae4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/Tile/zipball/663c4c56b4a49eefe4eedadf1c82ba2ad7752afb",
-                "reference": "663c4c56b4a49eefe4eedadf1c82ba2ad7752afb",
+                "url": "https://api.github.com/repos/endroid/Tile/zipball/737eb2116c85c056d612373bf29aaee7c9f00ae4",
+                "reference": "737eb2116c85c056d612373bf29aaee7c9f00ae4",
                 "shasum": ""
             },
             "require": {
@@ -2247,7 +2247,7 @@
                 "symfony/framework-bundle": "^2.3|^3.0",
                 "symfony/http-kernel": "^2.3|^3.0"
             },
-            "type": "library",
+            "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.x-dev"
@@ -2279,7 +2279,7 @@
                 "symfony",
                 "tile"
             ],
-            "time": "2017-04-30 09:41:36"
+            "time": "2017-09-18 19:50:11"
         },
         {
             "name": "fabpot/goutte",
