@@ -17,3 +17,6 @@ bin/console endroid:data-sanitize:load-example-data
 
 # Import
 bin/console endroid:import-demo:generate-data
+
+# Metrics
+vendor/bin/phpmetrics --report-html=public/metrics src
