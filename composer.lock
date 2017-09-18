@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a78e9a15ae581a49e8cb8ec34fe7b21",
+    "content-hash": "c846aa8749570e5224ebc6b19c02b774",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1740,17 +1740,17 @@
             "time": "2017-09-15 20:24:13"
         },
         {
-            "name": "endroid/data-sanitize-bundle",
+            "name": "endroid/data-sanitize",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/endroid/EndroidDataSanitizeBundle.git",
-                "reference": "aca624027d1183a93ecd512bce3c8bdb806adce9"
+                "url": "https://github.com/endroid/DataSanitize.git",
+                "reference": "1dbd654aecbc297aa415f0b9a000b346fc0cd7a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/EndroidDataSanitizeBundle/zipball/aca624027d1183a93ecd512bce3c8bdb806adce9",
-                "reference": "aca624027d1183a93ecd512bce3c8bdb806adce9",
+                "url": "https://api.github.com/repos/endroid/DataSanitize/zipball/1dbd654aecbc297aa415f0b9a000b346fc0cd7a2",
+                "reference": "1dbd654aecbc297aa415f0b9a000b346fc0cd7a2",
                 "shasum": ""
             },
             "require": {
@@ -1759,7 +1759,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^4.0|^5.0"
             },
-            "type": "library",
+            "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.x-dev"
@@ -1767,7 +1767,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Endroid\\Bundle\\DataSanitizeBundle\\": "src/"
+                    "Endroid\\DataSanitize\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1781,15 +1781,16 @@
                     "homepage": "http://endroid.nl/"
                 }
             ],
-            "description": "Endroid Data Sanitize Bundle",
-            "homepage": "https://github.com/endroid/EndroidDataSanitizeBundle",
+            "description": "Endroid Data Sanitize",
+            "homepage": "https://github.com/endroid/DataSanitize",
             "keywords": [
                 "bundle",
                 "data",
                 "endroid",
-                "sanitize"
+                "sanitize",
+                "symfony"
             ],
-            "time": "2017-09-15 20:25:28"
+            "time": "2017-09-18 20:33:07"
         },
         {
             "name": "endroid/flusher",
@@ -2220,6 +2221,65 @@
                 "symfony"
             ],
             "time": "2017-08-19 20:19:45"
+        },
+        {
+            "name": "endroid/tile",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/endroid/Tile.git",
+                "reference": "663c4c56b4a49eefe4eedadf1c82ba2ad7752afb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/endroid/Tile/zipball/663c4c56b4a49eefe4eedadf1c82ba2ad7752afb",
+                "reference": "663c4c56b4a49eefe4eedadf1c82ba2ad7752afb",
+                "shasum": ""
+            },
+            "require": {
+                "imagine/imagine": "^0.6",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0",
+                "sensio/framework-extra-bundle": "^3.0",
+                "symfony/browser-kit": "^2.3|^3.0",
+                "symfony/framework-bundle": "^2.3|^3.0",
+                "symfony/http-kernel": "^2.3|^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Endroid\\Tile\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen van den Enden",
+                    "email": "info@endroid.nl",
+                    "homepage": "http://endroid.nl/"
+                }
+            ],
+            "description": "Endroid Tile",
+            "homepage": "https://github.com/endroid/Tile",
+            "keywords": [
+                "blue",
+                "bundle",
+                "delft",
+                "endroid",
+                "symfony",
+                "tile"
+            ],
+            "time": "2017-04-30 09:41:36"
         },
         {
             "name": "fabpot/goutte",
@@ -2787,6 +2847,63 @@
                 "youtube"
             ],
             "time": "2017-01-08T14:13:58+00:00"
+        },
+        {
+            "name": "imagine/imagine",
+            "version": "v0.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avalanche123/Imagine.git",
+                "reference": "149041d2a1b517107bfe270ca2b1a17aa341715d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/149041d2a1b517107bfe270ca2b1a17aa341715d",
+                "reference": "149041d2a1b517107bfe270ca2b1a17aa341715d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "sami/sami": "dev-master"
+            },
+            "suggest": {
+                "ext-gd": "to use the GD implementation",
+                "ext-gmagick": "to use the Gmagick implementation",
+                "ext-imagick": "to use the Imagick implementation"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Imagine": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bulat Shakirzyanov",
+                    "email": "mallluhuct@gmail.com",
+                    "homepage": "http://avalanche123.com"
+                }
+            ],
+            "description": "Image processing for PHP 5.3",
+            "homepage": "http://imagine.readthedocs.org/",
+            "keywords": [
+                "drawing",
+                "graphics",
+                "image manipulation",
+                "image processing"
+            ],
+            "time": "2015-09-19T16:54:05+00:00"
         },
         {
             "name": "instaclick/php-webdriver",
@@ -8565,14 +8682,15 @@
     "stability-flags": {
         "endroid/calendar": 20,
         "endroid/cm-sms": 20,
-        "endroid/data-sanitize-bundle": 20,
+        "endroid/data-sanitize": 20,
         "endroid/flusher": 20,
         "endroid/guide": 20,
         "endroid/import": 20,
         "endroid/prediction-io": 20,
         "endroid/property-access": 20,
         "endroid/qrcode": 20,
-        "endroid/soccer-calendar": 20
+        "endroid/soccer-calendar": 20,
+        "endroid/tile": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
