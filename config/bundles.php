@@ -11,6 +11,7 @@ return [
     'Doctrine\Bundle\DoctrineBundle\DoctrineBundle' => ['all' => true],
     'EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle' => ['all' => true],
     'Symfony\Bundle\DebugBundle\DebugBundle' => ['dev' => true, 'test' => true],
+    'Endroid\Bundle\PusherBundle\EndroidPusherBundle' => ['all' => true],
     'Endroid\CmSms\Bundle\CmSmsBundle\EndroidCmSmsBundle' => ['all' => true],
     'Endroid\DataSanitize\Bundle\DataSanitizeBundle\EndroidDataSanitizeBundle' => ['all' => true],
     'Endroid\DataSanitize\Bundle\DataSanitizeDemoBundle\EndroidDataSanitizeDemoBundle' => ['all' => true],

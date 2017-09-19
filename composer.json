@@ -19,6 +19,7 @@
         "endroid/import": "dev-master",
         "endroid/prediction-io": "dev-master",
         "endroid/property-access": "dev-master",
+        "endroid/pusher-bundle": "dev-master",
         "endroid/qrcode": "dev-master",
         "endroid/soccer-calendar": "dev-master",
         "endroid/tile": "dev-master",
