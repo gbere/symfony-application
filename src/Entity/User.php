@@ -46,6 +46,7 @@ class User extends BaseUser implements UserInterface
 
     /**
      * @param string $googleId
+     *
      * @return User
      */
     public function setGoogleId(string $googleId): User
@@ -65,6 +66,7 @@ class User extends BaseUser implements UserInterface
 
     /**
      * @param string $githubId
+     *
      * @return User
      */
     public function setGithubId(string $githubId): User

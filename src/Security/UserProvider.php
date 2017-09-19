@@ -13,7 +13,6 @@ use FOS\UserBundle\Model\UserInterface;
 use HWI\Bundle\OAuthBundle\OAuth\Response\UserResponseInterface;
 use HWI\Bundle\OAuthBundle\Security\Core\Exception\AccountNotLinkedException;
 use HWI\Bundle\OAuthBundle\Security\Core\User\FOSUBUserProvider;
-use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Exception\BadCredentialsException;
 
 class UserProvider extends FOSUBUserProvider
@@ -26,7 +25,6 @@ class UserProvider extends FOSUBUserProvider
         try {
             return parent::loadUserByOAuthUserResponse($response);
         } catch (AccountNotLinkedException $exception) {
-
         }
 
         $userEmail = $response->getEmail();
