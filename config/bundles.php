@@ -9,7 +9,7 @@ return [
     'Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle' => ['all' => true],
     'Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle' => ['all' => true],
     'Doctrine\Bundle\DoctrineBundle\DoctrineBundle' => ['all' => true],
-    'JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle' => ['all' => true],
+    'EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle' => ['all' => true],
     'Symfony\Bundle\DebugBundle\DebugBundle' => ['dev' => true, 'test' => true],
     'Endroid\CmSms\Bundle\CmSmsBundle\EndroidCmSmsBundle' => ['all' => true],
     'Endroid\DataSanitize\Bundle\DataSanitizeBundle\EndroidDataSanitizeBundle' => ['all' => true],
