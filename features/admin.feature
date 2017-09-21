@@ -26,3 +26,11 @@ Feature: Admin
     And I fill in "_password" with "superadmin"
     And I press "_submit"
     Then I should see "Log out"
+
+  @javascript
+  Scenario: Incorrect login
+    Given I am on "/login"
+    And I fill in "_username" with "incorrect"
+    And I fill in "_password" with "incorrect"
+    And I press "_submit"
+    Then I should see "Invalid credentials"
