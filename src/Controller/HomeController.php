@@ -9,16 +9,18 @@
 
 namespace App\Controller;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Routing\Annotation\Route;
 
-class DefaultController extends Controller
+class HomeController extends Controller
 {
     /**
-     * @Route("/")
+     * @Route("/", name="home")
+     * @Template("home.html.twig")
      */
-    public function homeAction()
+    public function __invoke()
     {
-        return $this->render('default/home.html.twig');
+        return [];
     }
 }
