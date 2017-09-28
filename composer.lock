@@ -3425,7 +3425,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "KnpLabs",
+                    "name": "Knplabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -4302,16 +4302,16 @@
         },
         {
             "name": "phpmetrics/phpmetrics",
-            "version": "v2.2.0",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpmetrics/PhpMetrics.git",
-                "reference": "cc553d9ede844cd638e0d208b4f6eb6a201d2bbd"
+                "reference": "c6fc9a5ef08571ffa3b09d2f05017b4705715b95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpmetrics/PhpMetrics/zipball/cc553d9ede844cd638e0d208b4f6eb6a201d2bbd",
-                "reference": "cc553d9ede844cd638e0d208b4f6eb6a201d2bbd",
+                "url": "https://api.github.com/repos/phpmetrics/PhpMetrics/zipball/c6fc9a5ef08571ffa3b09d2f05017b4705715b95",
+                "reference": "c6fc9a5ef08571ffa3b09d2f05017b4705715b95",
                 "shasum": ""
             },
             "require": {
@@ -4359,7 +4359,7 @@
                 "quality",
                 "testing"
             ],
-            "time": "2017-04-13T05:18:28+00:00"
+            "time": "2017-09-22T09:33:03+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -4798,16 +4798,16 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "3.7.0",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "0ef23d1b10cf1bc576e9d865a7e9c47982c5715e"
+                "reference": "45cffe822057a09e05f7bd09ec5fb88eeecd2334"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/0ef23d1b10cf1bc576e9d865a7e9c47982c5715e",
-                "reference": "0ef23d1b10cf1bc576e9d865a7e9c47982c5715e",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/45cffe822057a09e05f7bd09ec5fb88eeecd2334",
+                "reference": "45cffe822057a09e05f7bd09ec5fb88eeecd2334",
                 "shasum": ""
             },
             "require": {
@@ -4876,7 +4876,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2017-08-04T13:39:04+00:00"
+            "time": "2017-09-22T20:46:04+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -5189,16 +5189,16 @@
         },
         {
             "name": "sonata-project/core-bundle",
-            "version": "3.5.0",
+            "version": "3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "592f82c732466fb784d502e1b0fceeffd168b67f"
+                "reference": "a8cc1731d832e6bde3fdad2334cfd158d1d45fbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/592f82c732466fb784d502e1b0fceeffd168b67f",
-                "reference": "592f82c732466fb784d502e1b0fceeffd168b67f",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/a8cc1731d832e6bde3fdad2334cfd158d1d45fbb",
+                "reference": "a8cc1731d832e6bde3fdad2334cfd158d1d45fbb",
                 "shasum": ""
             },
             "require": {
@@ -5264,7 +5264,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2017-09-19T15:29:38+00:00"
+            "time": "2017-09-20T14:14:38+00:00"
         },
         {
             "name": "sonata-project/datagrid-bundle",
@@ -6575,21 +6575,21 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.0.20",
+            "version": "v1.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "18e1d580367425ed6bc5e3046d40ec1d734d45e7"
+                "reference": "5a2618b783beb1c60655ffd5df7cd57829619ed4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/18e1d580367425ed6bc5e3046d40ec1d734d45e7",
-                "reference": "18e1d580367425ed6bc5e3046d40ec1d734d45e7",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/5a2618b783beb1c60655ffd5df7cd57829619ed4",
+                "reference": "5a2618b783beb1c60655ffd5df7cd57829619ed4",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.1",
-                "php": "^7.1"
+                "php": "^7.0"
             },
             "require-dev": {
                 "composer/composer": "^1.4",
@@ -6617,7 +6617,7 @@
                     "email": "fabien.potencier@gmail.com"
                 }
             ],
-            "time": "2017-09-14T19:04:54+00:00"
+            "time": "2017-09-27T01:36:46+00:00"
         },
         {
             "name": "symfony/form",
@@ -8713,16 +8713,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.4.3",
+            "version": "v2.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "eab7c3288ae6603d7d6f92b531626af2b162d1f2"
+                "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/eab7c3288ae6603d7d6f92b531626af2b162d1f2",
-                "reference": "eab7c3288ae6603d7d6f92b531626af2b162d1f2",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/eddb97148ad779f27e670e1e3f19fb323aedafeb",
+                "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb",
                 "shasum": ""
             },
             "require": {
@@ -8775,7 +8775,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-06-07T18:47:58+00:00"
+            "time": "2017-09-27T18:10:31+00:00"
         }
     ],
     "packages-dev": [],
