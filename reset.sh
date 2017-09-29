@@ -10,7 +10,7 @@ bin/console doctrine:database:drop --force
 bin/console doctrine:database:create
 bin/console doctrine:schema:update --force
 
-bin/console doctrine:fixtures:load -n --fixtures=src/DataFixtures/ORM
+bin/console doctrine:fixtures:load -n --fixtures=src/App/DataFixtures/ORM
 
 # Import / data sanitize demo commands
 bin/console endroid:import-demo:generate-data
