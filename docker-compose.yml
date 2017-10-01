@@ -48,7 +48,7 @@ services:
     php:
         build: docker/php/
         environment:
-            - ENVIRONMENT=DEV
+            - ENVIRONMENT=dev
             - BLACKFIRE_SERVER_ID=X
             - BLACKFIRE_SERVER_TOKEN=X
             - GITHUB_OAUTH_TOKEN=X

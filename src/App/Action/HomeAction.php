@@ -7,15 +7,15 @@
  * with this source code in the file LICENSE.
  */
 
-namespace App\Controller;
+namespace App\Action;
 
+use App\Responder\HomeResponder;
 use Symfony\Component\HttpFoundation\Response;
-use Twig\Environment;
 
-class HomeController
+final class HomeAction
 {
-    public function __invoke(Environment $twig): Response
+    public function __invoke(HomeResponder $responder): Response
     {
-        return new Response($twig->render('home.html.twig'));
+        return $responder();
     }
 }

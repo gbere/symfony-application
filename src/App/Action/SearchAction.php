@@ -7,21 +7,20 @@
  * with this source code in the file LICENSE.
  */
 
-namespace App\Controller;
+namespace App\Action;
 
+use App\Responder\SearchResponder;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Twig\Environment;
 
-class SearchController
+final class SearchAction
 {
-    public function __invoke(Request $request, Environment $twig): Response
+    public function __invoke(Request $request, SearchResponder $responder): Response
     {
         $query = $request->query->get('query');
 
-        return new Response($twig->render('search.html.twig', [
-            'query' => $query,
-            'results' => [],
-        ]));
+        $results = []; // Get results from domain
+
+        return $responder($query, $results);
     }
 }

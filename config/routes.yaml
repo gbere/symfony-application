@@ -1,7 +1,7 @@
 home:
     path: /
-    defaults: { _controller: 'App\Controller\HomeController' }
+    defaults: { _controller: 'App\Action\HomeAction' }
 
 search:
     path: /search
-    defaults: { _controller: 'App\Controller\SearchController' }
+    defaults: { _controller: 'App\Action\SearchAction' }

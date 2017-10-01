@@ -27,3 +27,5 @@ else
     sed -i 's/^display_startup_errors.*$/display_startup_errors = On/' /usr/local/etc/php/conf.d/application.ini
     sed -i 's/^display_errors.*$/display_errors = On/' /usr/local/etc/php/conf.d/application.ini
 fi
+
+npm install yarn -g

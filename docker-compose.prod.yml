@@ -20,7 +20,7 @@ services:
             - 6379
     php:
         environment:
-            - ENVIRONMENT=PROD
+            - ENVIRONMENT=prod
             - BLACKFIRE_SERVER_ID=X
             - BLACKFIRE_SERVER_TOKEN=X
             - GITHUB_OAUTH_TOKEN=X
