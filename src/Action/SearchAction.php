@@ -12,9 +12,13 @@ namespace App\Action;
 use App\Responder\SearchResponder;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 final class SearchAction
 {
+    /**
+     * @Route("/search", name="search")
+     */
     public function __invoke(Request $request, SearchResponder $responder): Response
     {
         $query = $request->query->get('query');

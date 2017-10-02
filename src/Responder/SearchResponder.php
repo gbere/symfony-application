@@ -17,7 +17,7 @@ final class SearchResponder extends TwigResponder
     {
         return new Response($this->twig->render('search.html.twig', [
             'query' => $query,
-            'results' => $results
+            'results' => $results,
         ]));
     }
 }

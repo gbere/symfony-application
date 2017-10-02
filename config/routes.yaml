@@ -1,7 +1,3 @@
-home:
-    path: /
-    defaults: { _controller: 'App\Action\HomeAction' }
-
-search:
-    path: /search
-    defaults: { _controller: 'App\Action\SearchAction' }
+controllers:
+    resource: ../src/Action/
+    type: annotation

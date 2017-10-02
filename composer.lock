@@ -1624,12 +1624,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/Calendar.git",
-                "reference": "58f29cde2d9e656b5dde9ae663843b13fb5e269e"
+                "reference": "dbab2a57fc91d026ea6aa859e5dac2758cf14b37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/Calendar/zipball/58f29cde2d9e656b5dde9ae663843b13fb5e269e",
-                "reference": "58f29cde2d9e656b5dde9ae663843b13fb5e269e",
+                "url": "https://api.github.com/repos/endroid/Calendar/zipball/dbab2a57fc91d026ea6aa859e5dac2758cf14b37",
+                "reference": "dbab2a57fc91d026ea6aa859e5dac2758cf14b37",
                 "shasum": ""
             },
             "require": {
@@ -1669,7 +1669,7 @@
                 "ical",
                 "ics"
             ],
-            "time": "2017-09-19 08:27:07"
+            "time": "2017-10-02 12:31:58"
         },
         {
             "name": "endroid/cm-sms",
@@ -3019,16 +3019,16 @@
         },
         {
             "name": "javiereguiluz/easyadmin-bundle",
-            "version": "v1.17.1",
+            "version": "v1.17.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/javiereguiluz/EasyAdminBundle.git",
-                "reference": "4d330c1da3a05f2e30e5e62d80123a2e6fdcf6c0"
+                "reference": "53b72b066b0372733b5538d985e1fcb526417847"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/javiereguiluz/EasyAdminBundle/zipball/4d330c1da3a05f2e30e5e62d80123a2e6fdcf6c0",
-                "reference": "4d330c1da3a05f2e30e5e62d80123a2e6fdcf6c0",
+                "url": "https://api.github.com/repos/javiereguiluz/EasyAdminBundle/zipball/53b72b066b0372733b5538d985e1fcb526417847",
+                "reference": "53b72b066b0372733b5538d985e1fcb526417847",
                 "shasum": ""
             },
             "require": {
@@ -3104,7 +3104,7 @@
                 "backend",
                 "generator"
             ],
-            "time": "2017-09-29T18:31:39+00:00"
+            "time": "2017-10-02T10:53:07+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
