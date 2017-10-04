@@ -48,3 +48,6 @@ endroid_guide:
         -
             label: Big Bang Theory
             type: epguides
+        -
+            label: Curb Your Enthusiasm
+            type: epguides
