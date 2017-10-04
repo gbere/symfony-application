@@ -9,10 +9,13 @@
 
 namespace App\Responder;
 
+use App\Traits\TwigTrait;
 use Symfony\Component\HttpFoundation\Response;
 
-final class SearchResponder extends TwigResponder
+final class SearchResponder
 {
+    use TwigTrait;
+
     public function __invoke(string $query, array $results): Response
     {
         return new Response($this->twig->render('search.html.twig', [

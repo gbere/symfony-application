@@ -23,8 +23,8 @@ final class SearchAction
     {
         $query = $request->query->get('query');
 
-        $results = []; // Get results from domain
+        $results = []; // Fetch from domain
 
-        return $responder($query, $results);
+        return $responder->__invoke($query, $results);
     }
 }

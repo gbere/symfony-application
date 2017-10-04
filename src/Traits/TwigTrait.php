@@ -7,16 +7,24 @@
  * with this source code in the file LICENSE.
  */
 
-namespace App\Responder;
+namespace App\Traits;
 
 use Twig\Environment;
 
-abstract class TwigResponder
+trait TwigTrait
 {
-    protected $twig;
+    /**
+     * @var Environment
+     */
+    private $twig;
 
-    public function __construct(Environment $twig)
+    /**
+     * @required
+     */
+    public function setTwig(Environment $twig): self
     {
         $this->twig = $twig;
+
+        return $this;
     }
 }

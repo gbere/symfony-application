@@ -20,6 +20,6 @@ final class HomeAction
      */
     public function __invoke(HomeResponder $responder): Response
     {
-        return $responder();
+        return $responder->__invoke();
     }
 }
