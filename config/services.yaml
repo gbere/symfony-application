@@ -30,6 +30,5 @@ services:
         public: true
         tags: ['controller.service_arguments']
 
-    app.security.user_provider:
-        class: App\Security\UserProvider
+    App\Security\UserProvider:
         arguments: ['@fos_user.user_manager', { google: googleId, github: githubId } ]

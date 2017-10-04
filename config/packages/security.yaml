@@ -29,7 +29,7 @@ security:
                 use_forward: false
                 failure_path: /login
                 oauth_user_provider:
-                    service: app.security.user_provider
+                    service: App\Security\UserProvider
 
     access_control:
         - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
