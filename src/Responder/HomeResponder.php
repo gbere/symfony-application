@@ -9,15 +9,15 @@
 
 namespace App\Responder;
 
-use App\Traits\TwigTrait;
+use App\Traits\TemplatingTrait;
 use Symfony\Component\HttpFoundation\Response;
 
 final class HomeResponder
 {
-    use TwigTrait;
+    use TemplatingTrait;
 
     public function __invoke(): Response
     {
-        return new Response($this->twig->render('home.html.twig'));
+        return new Response($this->templating->render('home.html.twig'));
     }
 }

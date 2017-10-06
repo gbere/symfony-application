@@ -7,19 +7,19 @@
  * with this source code in the file LICENSE.
  */
 
-namespace App\Action;
+namespace App\Action\Search;
 
-use App\Responder\SearchResponder;
+use App\Responder\Search\ResultsResponder;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-final class SearchAction
+final class ResultsAction
 {
     /**
      * @Route("/search", name="search")
      */
-    public function __invoke(Request $request, SearchResponder $responder): Response
+    public function __invoke(Request $request, ResultsResponder $responder): Response
     {
         $query = $request->query->get('query');
 

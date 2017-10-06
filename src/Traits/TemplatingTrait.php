@@ -11,19 +11,19 @@ namespace App\Traits;
 
 use Twig\Environment;
 
-trait TwigTrait
+trait TemplatingTrait
 {
     /**
      * @var Environment
      */
-    private $twig;
+    private $templating;
 
     /**
      * @required
      */
-    public function setTwig(Environment $twig): self
+    public function setTwig(Environment $templating): self
     {
-        $this->twig = $twig;
+        $this->templating = $templating;
 
         return $this;
     }
