@@ -20,6 +20,10 @@ trait TemplatingTrait
 
     /**
      * @required
+     *
+     * @param Environment $templating
+     *
+     * @return self
      */
     public function setTwig(Environment $templating): self
     {

@@ -7,24 +7,27 @@
  * with this source code in the file LICENSE.
  */
 
-namespace App\Action\Search;
+namespace App\Controller\Search;
 
-use App\Responder\Search\ResultsResponder;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Twig\Environment;
 
-final class ResultsAction
+final class ResultsController
 {
     /**
      * @Route("/search", name="search")
      */
-    public function __invoke(Request $request, ResultsResponder $responder): Response
+    public function __invoke(Request $request, Environment $twig): Response
     {
         $query = $request->query->get('query');
 
         $results = []; // Fetch from domain
 
-        return $responder->__invoke($query, $results);
+        return new Response($twig->render('search/results.html.twig', [
+            'query' => $query,
+            'results' => $results,
+        ]));
     }
 }

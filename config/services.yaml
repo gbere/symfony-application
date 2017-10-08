@@ -25,10 +25,20 @@ services:
 
     # controllers are imported separately to make sure they're public
     # and have a tag that allows actions to type-hint services
-    App\Action\:
-        resource: '../src/Action'
+    App\Controller\:
+        resource: '../src/Controller'
         public: true
         tags: ['controller.service_arguments']
 
     App\Security\UserProvider:
         arguments: ['@fos_user.user_manager', { google: googleId, github: githubId } ]
+
+    fos_oauth_server.storage.default:
+        class: App\Security\OAuth\TokenStorage
+        arguments:
+            - '@fos_oauth_server.client_manager'
+            - '@fos_oauth_server.access_token_manager'
+            - '@fos_oauth_server.refresh_token_manager'
+            - '@fos_oauth_server.auth_code_manager'
+            - '@fos_user.user_provider.username'
+            - '@security.encoder_factory'

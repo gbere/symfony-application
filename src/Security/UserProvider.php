@@ -25,6 +25,7 @@ class UserProvider extends FOSUBUserProvider
         try {
             return parent::loadUserByOAuthUserResponse($response);
         } catch (AccountNotLinkedException $exception) {
+            // Do nothing: we will try to link and load by email
         }
 
         $userEmail = $response->getEmail();

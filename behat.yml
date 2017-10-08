@@ -1,5 +1,9 @@
 default:
     extensions:
+        Behat\Symfony2Extension:
+            kernel:
+                bootstrap: features/bootstrap/bootstrap.php
+                class: App\Kernel
         Behat\MinkExtension:
             base_url: https://nginx
             goutte:
@@ -9,3 +13,11 @@ default:
                 browser: chrome
                 wd_host: http://selenium_hub:4444/wd/hub
             javascript_session: selenium2
+    suites:
+        default:
+            contexts:
+                - FeatureContext
+                - ApiFeatureContext:
+                      kernel: '@kernel'
+                      userManager: '@fos_user.user_manager'
+                      clientManager: '@fos_oauth_server.client_manager.default'

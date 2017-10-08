@@ -7,19 +7,19 @@
  * with this source code in the file LICENSE.
  */
 
-namespace App\Action;
+namespace App\Controller;
 
-use App\Responder\HomeResponder;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Twig\Environment;
 
-final class HomeAction
+final class HomeController
 {
     /**
      * @Route("/", name="home")
      */
-    public function __invoke(HomeResponder $responder): Response
+    public function __invoke(Environment $twig): Response
     {
-        return $responder->__invoke();
+        return new Response($twig->render('home.html.twig'));
     }
 }
