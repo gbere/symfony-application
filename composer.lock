@@ -1976,12 +1976,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/Import.git",
-                "reference": "581d713513c44a3ee5283b62790fc00dadd06c92"
+                "reference": "f8921c02a37f485d3e74a239e4b60bd01e15e40f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/Import/zipball/581d713513c44a3ee5283b62790fc00dadd06c92",
-                "reference": "581d713513c44a3ee5283b62790fc00dadd06c92",
+                "url": "https://api.github.com/repos/endroid/Import/zipball/f8921c02a37f485d3e74a239e4b60bd01e15e40f",
+                "reference": "f8921c02a37f485d3e74a239e4b60bd01e15e40f",
                 "shasum": ""
             },
             "require": {
@@ -2035,7 +2035,7 @@
                 "import",
                 "symfony"
             ],
-            "time": "2017-09-19 08:33:07"
+            "time": "2017-10-09 21:58:50"
         },
         {
             "name": "endroid/prediction-io",
@@ -7076,7 +7076,7 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.0.28",
+            "version": "v1.0.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
