@@ -1,10 +1,5 @@
 twig:
-    paths:
-        templates: ~
-        templates/bundles/FOSUser: FOSUser
-        templates/bundles/EndroidCmSms: EndroidCmSms
-        templates/bundles/EndroidGuide: EndroidGuide
-        templates/bundles/EndroidPredictionIODemo: EndroidPredictionIODemo
+    paths: ['%kernel.project_dir%/templates']
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
     form_themes:
