@@ -49,8 +49,8 @@ services:
         build: docker/php/
         environment:
             - ENVIRONMENT=dev
-            - BLACKFIRE_SERVER_ID=X
-            - BLACKFIRE_SERVER_TOKEN=X
+            - BLACKFIRE_SERVER_ID=52da59d0-7ec4-4737-89fd-3973ea2fbf78
+            - BLACKFIRE_SERVER_TOKEN=03115597825038092c132f970243ad82eac893c2167b7fcdb503dfabe7029562
             - GITHUB_OAUTH_TOKEN=X
         volumes:
             - .:/var/www/html
