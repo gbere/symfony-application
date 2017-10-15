@@ -9,9 +9,8 @@
 
 namespace App\Controller\Api\Search;
 
-use FOS\RestBundle\Controller\Annotations\QueryParam;
 use FOS\RestBundle\Controller\Annotations\View;
-use Nelmio\ApiDocBundle\Annotation\ApiDoc;
+use Swagger\Annotations as SWG;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -20,17 +19,21 @@ use Symfony\Component\Routing\Annotation\Route;
 final class ResultsController
 {
     /**
-     * @Route("/api/search", name="api_search")
+     * @Route("/api/search", name="api_search", methods={"GET"})
      *
-     * @ApiDoc(
-     *   section="Search",
-     *   statusCodes = {
-     *     200 = "Returned when successful",
-     *     401 = "Returned when unauthorized"
-     *   }
+     * @SWG\Response(
+     *     response=200,
+     *     description="Search results for the given query"
      * )
      *
-     * @QueryParam(name="query")
+     * @SWG\Parameter(
+     *     name="query",
+     *     in="query",
+     *     type="string",
+     *     description="Search query"
+     * )
+     *
+     * @SWG\Tag(name="search")
      *
      * @View(statusCode=200)
      */
