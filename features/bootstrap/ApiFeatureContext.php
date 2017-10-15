@@ -32,9 +32,9 @@ class ApiFeatureContext implements Context
     }
 
     /**
-     * @Given I retrieve an access token for :username
+     * @Given I retrieve an OAuth token for :username
      */
-    public function iRetrieveAnAccessTokenFor(string $username): void
+    public function iRetrieveAnOauthTokenFor($username)
     {
         $user = $this->userManager->findUserByUsername($username);
 
@@ -50,18 +50,29 @@ class ApiFeatureContext implements Context
         $json = json_decode($response->getContent());
 
         if (!$json || !$json->access_token) {
-            throw new \Exception('No valid JSON returned');
+            throw new \Exception('No valid token returned');
         }
 
         $this->accessToken = $json->access_token;
     }
 
     /**
-     * @Given I use an invalid access token
+     * @Given I retrieve a JWT token with username :username and password :password
      */
-    public function iUseAnInvalidAccessToken()
+    public function iRetrieveAJwtTokenFor($username, $password)
     {
-        $this->accessToken = 'invalid_access_token';
+        $response = $this->kernel->handle(Request::create('/api/login_check', 'POST', [
+            '_username' => $username,
+            '_password' => $password
+        ]));
+
+        $json = json_decode($response->getContent());
+
+        if (!$json || !$json->token) {
+            throw new \Exception('No valid token returned');
+        }
+
+        $this->accessToken = $json->token;
     }
 
     /**
@@ -74,6 +85,14 @@ class ApiFeatureContext implements Context
         $request = Request::create('/api/search', 'GET', ['query' => $query]);
         $request->headers->set('Authorization', 'Bearer '.$this->accessToken);
         $this->response = $this->kernel->handle($request);
+    }
+
+    /**
+     * @Given I use an invalid access token
+     */
+    public function iUseAnInvalidAccessToken()
+    {
+        $this->accessToken = 'invalid_access_token';
     }
 
     /**
@@ -91,12 +110,19 @@ class ApiFeatureContext implements Context
     /**
      * @Then I should see an error message
      */
-    public function iShouldSeeAnErrorMessage()
+    public function iShouldNotSeeAnErrorMessage()
     {
-        $json = json_decode($this->response->getContent());
+        $content = $this->response->getContent();
+        $json = json_decode($content);
 
-        if (!$json || !$json->error_description) {
+        if (!$json) {
             throw new \Exception('No valid response returned');
+        }
+
+        $isErrorMessage = stripos($content, 'invalid') !== false;
+
+        if (!$isErrorMessage) {
+            throw new \Exception('Response does not contain an error message');
         }
     }
 }
