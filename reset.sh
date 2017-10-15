@@ -12,6 +12,9 @@ bin/console doctrine:schema:update --force
 
 bin/console doctrine:fixtures:load -n --fixtures=src/DataFixtures/ORM
 
+# JWT
+make generate-jwt-keys
+
 # Import / data sanitize demo commands
 bin/console endroid:import-demo:generate-data
 bin/console endroid:data-sanitize-demo:generate-data
