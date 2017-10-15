@@ -13,4 +13,4 @@ docker-compose-prod up -d
 echo "Allow MariaDB to initialize"
 sleep 10
 
-docker-compose-prod exec --user 1000 php /bin/sh reset.sh
+docker-compose-prod exec -T --user 1000 php /bin/sh reset.sh
