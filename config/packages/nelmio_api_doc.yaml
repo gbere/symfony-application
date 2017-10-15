@@ -8,10 +8,10 @@ nelmio_api_doc:
             description: Documentation
             version: 1.0.0
         securityDefinitions:
-            api_key:
+            token:
                 type: apiKey
-                description: Your Json Web Token
-                name:  authorization
                 in: header
+                name: Authorization
+                description: Enter value as "Bearer TOKEN"
         security:
-            api_key: []
+            - token: []
